@@ -1,0 +1,43 @@
+program Menuss ;
+var opMenu:char;
+Begin
+	repeat
+		Clrscr;
+		Writeln('			MENU			');
+		Writeln;
+		Writeln('1. Incluir Cadastro ');
+		Writeln('2. Excluir Cadastro ');
+		Writeln('3. Atualizar Cadastro ');
+		Writeln('4. Fazer Filtro ');
+		Writeln('5. Atualizar Cadastros ');
+		Writeln;
+		write ('=> ');
+		Read(opMenu);
+		Writeln;
+		Writeln;
+		case opMenu of
+			'1':begin
+			    	Writeln('Cadastro Incluido');
+			    	Writeln('Pressione Enter para prosseguir.');
+			
+					end; //fim op��o 1
+			'2':begin
+			      Writeln('Exclusão feita');
+			      Writeln('Pressione Enter para prosseguir.');
+					end; //fim op��o 2
+			'3':begin
+			      Writeln('Atualizado');
+			      Writeln('Pressione Enter para prosseguir.');
+					end; //fim op��o 1
+			'4':begin
+			      Writeln('Filtro Realizado');
+			      Writeln('Pressione Enter para prosseguir.');
+					end; //fim op��o 2
+			'5':begin
+			      Writeln('Cadastro Atualizado');
+			      Writeln('Pressione Enter para prosseguir.');
+					end; //fim op��o 1
+		end; //fim case menu
+		readkey;
+	until opMenu = '5';
+End.
